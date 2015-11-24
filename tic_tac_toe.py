@@ -63,6 +63,12 @@ def getMove(BOARD, LOACTIONS, player):
 
 
 def win(board, player):
+    """
+    This function will check the board for all possible wining 
+    scenarios and return True if those conditions are met, ortherwise
+    it will return False.
+
+    """
     # Check rows
     if board[0] == player[1] and  board[1] == player[1] and board[2] == player[1]:
         return True
